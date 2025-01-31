@@ -1,4 +1,3 @@
-// Import necessary modules
 const serverless = require('serverless-http');
 const express = require("express");
 const bcrypt = require("bcryptjs");
@@ -14,7 +13,7 @@ const OrderModel = require("./model/Order");
 const authenticateJWT = require("./middlewares/authenticateJWT");
 const cors = require("cors");
 
-// Load environment variables from .env file
+
 dotenv.config();
 
 const app = express();
